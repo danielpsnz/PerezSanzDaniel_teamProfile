@@ -47,9 +47,69 @@ function typeEmployee() {
      },
    ]).then(val => {
       if (val.name === "Engineer") {
-       engineerInformation()
+       engineerInformation();
      } else if (val.name === "Intern") {
        internInformation();
      };
    }); 
  };
+
+ function engineerInformation() {
+    return inquirer.prompt([
+      {
+        type: "input",
+        message: "what is your engineer's name?",
+        name: "name"
+      },
+      {
+        type: "input",
+        message: "What is your engineer's ID?",
+        name: "id",
+      },
+      {
+        type: "input",
+        message: "What is your engineer's email?",
+        name: "email"
+      },
+      {
+        type: "input",
+        message: "What is your engineer's GitHub usernam?",
+        name: "GitHub",
+      },
+    ]).then(function(answer) {
+      let engineer = new Engineer(answer.name, answer.id, answer.email, answer.GitHub)
+      team.push(engineer);
+  
+      typeEmployee()
+    })
+  };
+
+  function internInformation() {
+    return inquirer.prompt([
+      {
+        type: "input",
+        message: "what is your intern's name?",
+        name: "name"
+      },
+      {
+        type: "input",
+        message: "What is your intern's ID?",
+        name: "id",
+      },
+      {
+        type: "input",
+        message: "What is your intern's email?",
+        name: "email"
+      },
+      {
+        type: "input",
+        message: "What is your intern's school?",
+        name: "school",
+      },
+    ]).then(function(answer) {
+      let intern = new Intern(answer.name, answer.id, answer.email, answer.school)
+      team.push(intern);
+  
+      typeEmployee()
+    })
+  };
