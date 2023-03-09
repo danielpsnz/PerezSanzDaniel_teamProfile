@@ -75,7 +75,7 @@ function engineerInformation() {
       name: "GitHub",
     },
   ]).then(answers => {
-    const engineer = new Engineer(answer.name, answer.id, answer.email, answer.GitHub)
+    const engineer = new Engineer(answers.name, answers.id, answers.email, answers.GitHub)
     employees.push(engineer);
     createTeam()
   })
@@ -117,7 +117,7 @@ function createTeam() {
        type: "list",
        message: "What type of employee would you like to input?",
        name: "name",
-       choices: ["Engineer", "Intern", "Not applicable"],
+       choices: ["Engineer", "Intern", "Manager", "Not applicable"],
      },
    ]).then(val => {
       if (val.name === "Engineer") {
@@ -131,3 +131,5 @@ function createTeam() {
      }
    })
 }
+
+createTeam();

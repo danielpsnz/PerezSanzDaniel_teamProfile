@@ -1,27 +1,28 @@
 {
-    "name": "team_profile_generator",
-    "version": "1.0.0",
-    "description": "Team Profile Generator",
-    "main": "index.js",
-    "directories": {
-      "lib": "lib"
-    },
-    "scripts": {
-      "test": "jest",
-      "start": "node index.js"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/danielpsnz/PerezSanzDaniel_teamProfile.git"
-    },
-    "author": "Daniel Pérez Sanz",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/danielpsnz/PerezSanzDaniel_teamProfile/_tests_"
-    },
-    "homepage": "https://github.com/danielpsnz/PerezSanzDaniel_teamProfile",
-    "dependencies": {
-      "inquirer": "^8.2.5",
-      "jest": "^29.4.3"
-    }
-  }
+  "name": "team_profile_generator",
+  "version": "1.0.0",
+  "description": "Team Profile Generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielpsnz/PerezSanzDaniel_teamProfile.git"
+  },
+  "author": "Daniel Pérez Sanz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielpsnz/PerezSanzDaniel_teamProfile/_tests_"
+  },
+  "homepage": "https://github.com/danielpsnz/PerezSanzDaniel_teamProfile",
+  "dependencies": {
+    "inquirer": "^8.2.5",
+    "jest": "^29.4.3"
+  },
+  "devDependencies": {}
+}
