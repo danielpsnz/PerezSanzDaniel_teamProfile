@@ -2,6 +2,8 @@
   
   ## Description
     This is a project to create a team profile generator for an enterprise using Node.js and JavaScript. 
+   
+   ![screenshot](./screenshot.png)
 
   ## License
   MIT
